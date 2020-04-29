@@ -1,9 +1,9 @@
----
-- name: Check Windows Update
+name:  Windows Update
   hosts: all
-  gather_facts: False
-
+  gather_facts: false
   tasks:
-  - name: Check Windows Update
-    include_role:
-      name: check_win_updates
+    - name: Running Windows Update
+      win_updates:
+      state: searched
+        category_names: ['SecurityUpdates','CriticalUpdates','UpdateRollups', 'Updates', 'DefinitionUpdates']
+        reboot: no
