@@ -5,7 +5,8 @@
   connection: winrm
   
    tasks:
- - name: check_win_updates
+ - name: Check Windows Update
+   name: check_win_updates
     win_updates:
       category_names:
         - Application
