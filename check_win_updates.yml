@@ -1,8 +1,9 @@
- ---
- - name: Check Windows Update
+---
+- name: Check Windows Update
   hosts: all
-  gather_facts: False
   connection: winrm
+  gather_facts: False
+ 
   
   tasks:
   - name: Check Windows Update
