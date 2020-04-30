@@ -9,9 +9,3 @@
   - name: Check Windows Update
     include_role:
       name: check_win_updates
-    win_updates:
-      category_names:
-        - CriticalUpdates
-        - DefinitionUpdates
-        - SecurityUpdates
-        - Updates
