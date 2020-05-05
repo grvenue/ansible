@@ -5,6 +5,6 @@
   gather_facts: true
   tasks:
     - win_updates:
-      category_names: SecurityUpdates
-      state: searched
+    - category_names: SecurityUpdates
+    - state: searched
     - log_path: c:\ansible_wu.txt
