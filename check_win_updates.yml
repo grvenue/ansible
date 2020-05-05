@@ -1,5 +1,5 @@
 - name: Check Windows Update
-      win_updates:
+    win_updates:
     category_names: SecurityUpdates
     state: searched
     log_path: c:\ansible_wu.txt
